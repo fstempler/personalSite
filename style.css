@@ -1,0 +1,69 @@
+/*Agrega el tipo de fuente elegida*/
+@font-face {
+	font-family: "Special Elite";
+	font-style: normal;
+	font-weight: 400;
+	src: url("https://fonts.gstatic.com/s/specialelite/v18/XLYgIZbkc4JPUL5CVArUVL0ntnAOSA.woff2") format("woff2");
+	unicode-range: U+0??, U+131, U+152-153, U+2bb-2bc, U+2c6, U+2da, U+2dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215, U+feff, U+fffd;
+}
+
+/*Modifica la font del menú principal*/
+.desktop-nav>.selected>.desktop-nav-link {
+	border-top: 1px solid #95a5a6;
+	border-bottom: 1px solid #95a5a6;
+}
+
+.desktop-nav-item.selected>.desktop-nav-link {
+	color: #95a5a6;
+}
+
+.theme-wide .desktop-nav .desktop-nav-link {
+	letter-spacing: 1px;
+}
+
+.desktop-nav-item .desktop-nav-link {
+	text-decoration: none;
+}
+
+.theme-wide .desktop-nav-link {
+	padding: 10px;
+}
+
+.desktop-nav-link {
+	color: #171717;
+	font-family: "Special Elite", "Book Antiqua", Palatino, serif;
+	font-weight: 400;
+	font-size: larger;
+}
+
+/*Modifica la font del botón del input búsqueda*/
+input, textarea {
+	border-radius: 0;
+	appearance: none;
+	font-family: "Special Elite", cursive;
+}
+
+/*Modifica la font en los botones de "Crear cuenta" e "Iniciar sesión"*/
+a {
+	color: #171717;
+	font-family: "Special Elite", Sans-serif;
+	font-size: larger;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+/*Modifica la posición de los elementos dentro del banner de envíos, pagos y seguridad*/
+.banner-services-footer .services {
+	margin: 15px;
+}
+
+/*Modifica el color de fondo del banner de "envíos, pagos y seguridad". Está puesto con la transparencia al máximo porque sale por encima del espacio de fondo. De esta manera no hay que editar el html y solo se puede hacer por .css */
+.services, .mobile-services-container {
+	background: rgba(76, 175, 80, 0);
+}
+
+/*Modifica la fuente de los links del menú en el footer*/
+.footer a {
+	font-family: "Special Elite", "Book Antiqua", Palatino, serif;
+	font-size: inherit;
+}

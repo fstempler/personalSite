@@ -1,0 +1,136 @@
+@import "var";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+body {
+      background-image: url(../img/shattered-island.gif);
+      font-family: 'Montserrat', sans-serif;
+      color: $title_color;
+      background-color: #171717;
+  }
+  
+
+.text{
+    color: $subtitle_color;
+    }
+  
+.title{
+    color: $title_color;
+    font-weight: 500;
+    font-size: 4rem;    
+  }   
+.subtitle{
+    color: $text_color;
+  }
+
+  .button--main {
+    background: none;
+    border: solid 1px $text_color;
+    color: $text_color;
+    padding: .375em 1.125em;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 200;
+    
+      &:hover{
+        background: #7fffd425;
+        color: $title_color;
+        border: solid 1px $text_color;
+        transition: color 1s;
+      }
+    
+  }
+  
+  
+  .nav-link{
+    color: $title_color;
+    position: relative;
+  }
+  .nav-link::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 1px;
+    width: 25%;    
+    background-color: $text_color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .nav-link:hover::after{
+    opacity: 1;
+    color: $text_color;
+    
+  }
+  .cv{
+    border: solid 1px;
+    border-radius: 50%;
+    /*background-color: $text_color;*/
+    color: $subtitle_color;
+    height: 30px;
+    width: 30px;
+
+    &:hover{
+      background-color: #7fffd425;
+      color: $subtitle_color;
+    }
+  }
+
+
+  .spanish{
+    height: 110px;
+    width: 110px;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+  }
+
+.spbutton{
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: solid 1px $text_color;
+    color: $text_color;
+    font-size: 1rem;
+    border-radius: 50%;
+    font-weight: 200;
+    
+      &:hover{
+        background: #7fffd425;
+        color: $title_color;
+        border: solid 1px $text_color;
+        transition: color 1s;
+      }
+  }
+
+  footer {
+    bottom: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.212);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+    & p{
+    color: $title_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    text-decoration: none; 
+    font-weight: 100;
+    font-size: medium;
+  }
+    
+    & a{
+    text-decoration: none;
+    color: $title_color;
+  }
+}
